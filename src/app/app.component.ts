@@ -7,4 +7,54 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'structural-diretives-demo';
+
+  displayMessage: boolean = false;
+
+  message(){ 
+    this.displayMessage = !this.displayMessage;
+  }
+
+  num: number = 12;
+  num1: number = 12;
+  
+  get isEvenNumber() : boolean{
+
+    return this.num % 2 == 0;
+
+  }
+  get isOddNumber() : boolean{
+
+    return this.num % 2 != 0;
+
+  }
+
+  ///////////////
+
+  get isEvenNumber1() : boolean{
+
+    return this.num1 % 2 == 0;
+
+  }
+  get isOddNumber1() : boolean{
+
+    return this.num1 % 2 != 0;
+
+  }
+
+
+  //////////////////
+
+  products: any[] = [
+    "laptops","keybords","mouse","usb cables","pen-drives","speakers","tabs"
+  ]
+  numbers : number[] = [ 12, 10, 9, 45, 2, 125, 10, 45 ];
+  isEvenNumber2(num:number):boolean{
+    return num % 2==0;
+
+  }
+
+  isOddNumber2(num:number) :boolean{ 
+    return num % 2 != 0;
+  }
+  
 }
