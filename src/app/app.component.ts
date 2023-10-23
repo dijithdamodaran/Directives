@@ -47,7 +47,8 @@ export class AppComponent {
   products: any[] = [
     "laptops","keybords","mouse","usb cables","pen-drives","speakers","tabs"
   ]
-  numbers : number[] = [ 12, 10, 9, 45, 2, 125, 10, 45 ];
+
+  numbers : number[] = [ 100, 45, 33, 102, 67, 87,99,49, 54, 66];
   isEvenNumber2(num:number):boolean{
     return num % 2==0;
 

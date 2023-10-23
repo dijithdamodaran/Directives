@@ -18,7 +18,7 @@
   <h2>even odd number</h2>
   <p>enter a number : <br> <input type="number" [(ngModel)]="num1"></p>
   <p *ngIf="isEvenNumber1; else elseBlock">the number {{num1}} is even.</p>
-  <ng-template #elseBlock>
+  <ng-template #elseBlock> 
     the number {{num1}}is odd.
   </ng-template>
 </div>
@@ -37,9 +37,10 @@ devise a logic to display the even number from that array-->
 <div>
   <h2>for and if combo</h2>
   <ul>
-    <li *ngFor="let num  of numbers"></li>
+    <li *ngFor="let num  of numbers">
     <span *ngIf="isEvenNumber2(num)">Even : {{num}}</span>
     <span *ngIf="isOddNumber2(num)">odd : {{num}}</span>
+  </li>
   </ul>
 </div> 
 
