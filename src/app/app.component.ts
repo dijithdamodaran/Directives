@@ -58,4 +58,5 @@ export class AppComponent {
     return num % 2 != 0;
   }
   
+  sports:string="hockey";
 }

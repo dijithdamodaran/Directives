@@ -44,19 +44,19 @@ devise a logic to display the even number from that array-->
   </ul>
 </div> 
 
-<!--switch case demoi-->  
+<!--switch case demo-->  
 <div>
 <h2>switch case demo</h2>
-<p>enter your favorite sports :</p>
-<!--<input type="text" [(ngModel)]="sports">
+<p>enter your favorite sports :<br>
+<input type="text" [(ngModel)]="sports"></p>
 <p [ngSwitch]="sports">
-  <span *ngswitchcase="hockey">hockey</span>
-  <span *ngswitchcase="crecket">cricket</span>
-  <span *ngswitchcase="baseball">baseball</span>
-  <span *ngswitchcase="tennis">tennis</span>
-
-</p>-->
+  <span *ngSwitchCase="'hockey'">Hockey</span>
+  <span *ngSwitchCase="'crecket'">Cricket</span>
+  <span *ngSwitchCase="'baseball'">Baseball</span>
+  <span *ngSwitchCase="'tennis'">Tennis</span>
+</p>
 </div>
+ 
 <!--example for ng style-->
 <!--<div [ngStyle]="{'background-color':backgroundcolor}">
   this is ngstyle example.
