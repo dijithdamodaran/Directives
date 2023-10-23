@@ -59,4 +59,5 @@ export class AppComponent {
   }
   
   sports:string="hockey";
+  backgroundcolor:string='gray';
 }
